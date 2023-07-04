@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+.flex_middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgb(30, 31, 41) 0%, rgb(38, 27, 41) 100%);
+}
+
+.bg_images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.bg_images .stars {
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+}
+.bg_images .stars img {
+  width: auto;
+  height: 100%;
+}
+.bg_images .hill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 22%;
+}
+.bg_images .hill img {
+  right: 0;
+  bottom: -3em;
+  position: absolute;
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 100%;
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.app .header {
+  width: 100%;
+  height: 87%;
+}
+.app .header h1 {
+  position: absolute;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.28em;
+  text-align: center;
+  top: 15%;
+  margin: 0em 1.6em 0em 1.6em;
+}
+.app .header .timer {
+  width: 100%;
+  height: 10em;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.app .header .timer .times_wraper {
+  width: 7.6em;
+  height: 6.7em;
+  position: relative;
+  cursor: pointer;
+  perspective: 500px;
+}
+.app .header .timer .times_wraper .shadow {
+  width: 100%;
+  height: 50%;
+  transform: translateY(0.6em);
+  position: absolute;
+  bottom: 0;
+  background: rgb(25, 26, 36);
+  border-radius: 0px 0px 7px 7px;
+}
+.app .header .timer .times_wraper .background {
+  width: 100%;
+  height: 100%;
+  background: rgb(52, 54, 79);
+  position: absolute;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.app .header .timer .times_wraper .background .b_top {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .header .timer .times_wraper .background .b_top .num {
+  font-size: 4em;
+  color: rgb(251, 96, 135);
+  margin-top: 0.84em;
+}
+.app .header .timer .times_wraper .background .b_bot {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .header .timer .times_wraper .background .b_bot .num {
+  font-size: 4em;
+  color: rgb(251, 96, 135);
+  margin-top: -0.84em;
+}
+.app .header .timer .times_wraper .background .circle {
+  width: 0.6em;
+  height: 0.6em;
+  background: rgb(25, 26, 36);
+  position: absolute;
+  border-radius: 50%;
+}
+.app .header .timer .times_wraper .background .circle.left {
+  left: 0;
+  transform: translateX(-0.3em);
+}
+.app .header .timer .times_wraper .background .circle.right {
+  right: 0;
+  transform: translateX(0.3em);
+}
+.app .header .timer .times_wraper .background .line {
+  width: 100%;
+  height: 2px;
+  background: rgba(25, 26, 36, 0.5);
+  position: absolute;
+  transform-origin: center;
+  transform: scaleY(0.5);
+  z-index: 0;
+}
+.app .header .timer .times_wraper .background .overlay {
+  width: 100%;
+  height: 50%;
+  background: rgba(25, 26, 36, 0.3);
+  position: absolute;
+  top: 0;
+}
+.app .header .timer .times_wraper .times {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform-box: content-box;
+}
+.app .header .timer .times_wraper .times .fliper {
+  width: 100%;
+  height: 50%;
+  background: rgb(52, 54, 79);
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.app .header .timer .times_wraper .times .fliper .circle {
+  width: 0.6em;
+  height: 0.6em;
+  background: rgb(25, 26, 36);
+  position: absolute;
+  border-radius: 50%;
+}
+.app .header .timer .times_wraper .times .fliper .line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background: rgb(25, 26, 36);
+  transform: scaleY(0.6);
+  z-index: 2;
+}
+.app .header .timer .times_wraper .times .fliper .overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 26, 36, 0.3);
+  position: absolute;
+  top: 0;
+}
+.app .header .timer .times_wraper .times .fliper.foreg {
+  border-radius: 7px 7px 0px 0px;
+}
+.app .header .timer .times_wraper .times .fliper.foreg .circle {
+  bottom: 0;
+}
+.app .header .timer .times_wraper .times .fliper.foreg .circle.left {
+  left: 0;
+  transform: translateX(-50%) translateY(50%);
+}
+.app .header .timer .times_wraper .times .fliper.foreg .circle.right {
+  right: 0;
+  transform: translateX(50%) translateY(50%);
+}
+.app .header .timer .times_wraper .times .fliper.foreg .line {
+  bottom: 0;
+  transform-origin: bottom;
+}
+.app .header .timer .times_wraper .times .fliper.foreg .num {
+  font-size: 4em;
+  color: rgb(251, 96, 135);
+  margin-top: 0.84em;
+}
+.app .header .timer .times_wraper .times .fliper.backg {
+  border-radius: 0px 0px 7px 7px;
+  transform-origin: bottom;
+  transform: rotatex(180deg) translateY(100%);
+}
+.app .header .timer .times_wraper .times .fliper.backg .circle {
+  top: 0;
+}
+.app .header .timer .times_wraper .times .fliper.backg .circle.left {
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+.app .header .timer .times_wraper .times .fliper.backg .circle.right {
+  right: 0;
+  transform: translateX(50%) translateY(-50%);
+}
+.app .header .timer .times_wraper .times .fliper.backg .line {
+  top: 0;
+  transform-origin: top;
+}
+.app .header .timer .times_wraper .times .fliper.backg .num {
+  font-size: 4em;
+  color: rgb(251, 96, 135);
+  margin-top: -0.84em;
+}
+.app .header .timer .times_wraper .text {
+  position: absolute;
+  bottom: 0;
+  color: rgb(132, 134, 169);
+  font-size: 0.7em;
+  left: 50%;
+  transform: translate(-50%, 3em);
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+.app .header .timer .times_wraper.flipping .times {
+  transform: rotatex(-180deg);
+  transition: transform 0.7s;
+}
+.app .header .timer .times_wraper.flipping .times .overlay {
+  background: rgb(25, 26, 36);
+  transition: 0.7s;
+}
+.app .footer {
+  width: 100%;
+  height: 13%;
+}
+.app .footer .links {
+  width: 9em;
+  height: 2.5em;
+  display: flex;
+  justify-content: space-between;
+}
+.app .footer .links .link {
+  width: 2.5em;
+  height: 100%;
+  cursor: pointer;
+}
+.app .footer .links .link svg path {
+  transition: 0.2s;
+}
+.app .footer .links .link:hover path {
+  fill: hsl(345, 95%, 68%);
+}
+.app .attribution {
+  font-size: 9px;
+  text-align: center;
+  color: white;
+}
+.app .attribution a {
+  color: hsl(228, 33%, 52%);
+}
+
+@media only screen and (min-width: 1440px) {
+  .hill img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .times_wraper {
+    font-size: 55%;
+  }
+  .footer .links .link svg {
+    transform: scale(0.8);
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
