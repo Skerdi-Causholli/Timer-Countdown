@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: (https://64a47b519f316416c0fedfc7--playful-biscuit-e7b9aa.netlify.app/)
+- Live Site URL: [Live Site](https://64a47b519f316416c0fedfc7--playful-biscuit-e7b9aa.netlify.app/)
 
 ## My process
 
@@ -49,5 +49,5 @@ Users should be able to:
 
 ## Author
 
-- Website - (https://64a47b519f316416c0fedfc7--playful-biscuit-e7b9aa.netlify.app/)
-- Frontend Mentor - (https://www.frontendmentor.io/profile/Skerdi-Causholli)
+- Website - [Website URL](https://64a47b519f316416c0fedfc7--playful-biscuit-e7b9aa.netlify.app/)
+- Frontend Mentor - [Frontend Accoint](https://www.frontendmentor.io/profile/Skerdi-Causholli)
